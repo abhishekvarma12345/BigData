@@ -1,0 +1,70 @@
+pscp -P 22 G049HW3.py adasaraj@torre.studenti.math.unipd.it:
+
+scp -P 2222 G049HW3.py group049@147.162.226.106:
+
+spark-submit --conf spark.pyspark.python=python3 --num-executors 2 G049HW3.py /data/BDC2122/HIGGS-REDUCED-7D.txt 10 150 2
+
+ssh -p 2222 group049@147.162.226.106
+
+
+for executors = 16
+File : /data/BDC2122/HIGGS-REDUCED-7D.txt
+Number of points N =  1196793
+Number of centers k =  10
+Number of outliers z =  150
+Number of partitions L =  16
+Time to read from file:  5345.127820968628  ms
+Initial guess =  0.744492309616
+Final guess =  0.744492309616
+Number of guesses =  1
+Time Round1:  49927.58345603943  ms
+Time Round2:  16837.31770515442  ms
+Objective function =  6.209073529942056
+Time to compute objective function:  6317.359447479248  ms
+-----------------------------------------------------------------------------
+executors = 8
+File : /data/BDC2122/HIGGS-REDUCED-7D.txt
+Number of points N =  1196793
+Number of centers k =  10
+Number of outliers z =  150
+Number of partitions L =  8
+Time to read from file:  5608.394384384155  ms
+Initial guess =  0.825617921306
+Final guess =  0.825617921306
+Number of guesses =  1
+Time Round1:  93341.19510650635  ms
+Time Round2:  4148.051977157593  ms
+Objective function =  6.3367307279776774
+Time to compute objective function:  11410.755157470703  ms
+-------------------------------------------------------------------------------
+executors = 4
+File : /data/BDC2122/HIGGS-REDUCED-7D.txt
+Number of points N =  1196793
+Number of centers k =  10
+Number of outliers z =  150
+Number of partitions L =  4
+Time to read from file:  8156.0022830963135  ms
+Initial guess =  1.01501297496
+Final guess =  1.01501297496
+Number of guesses =  1
+Time Round1:  204650.66719055176  ms
+Time Round2:  1138.077735900879  ms
+Objective function =  7.8192624521473295
+Time to compute objective function:  23946.4693069458  ms
+--------------------------------------------------------------------------------
+executors = 2
+File : /data/BDC2122/HIGGS-REDUCED-7D.txt
+Number of points N =  1196793
+Number of centers k =  10
+Number of outliers z =  150
+Number of partitions L =  2
+Time to read from file:  11392.682075500488  ms
+Initial guess =  1.14689921667
+Final guess =  1.14689921667
+Number of guesses =  1
+Time Round1:  377533.95223617554  ms
+Time Round2:  309.1297149658203  ms
+Objective function =  8.852562893291088
+Time to compute objective function:  45272.65000343323  ms
+
+
